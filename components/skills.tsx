@@ -17,9 +17,9 @@ const skillCategories = [
     title: "Software & Tools",
     skills: [
       { name: "Aspen HYSYS", level: 92 },
-      { name: "Python", level: 88 },
-      { name: "MATLAB", level: 90 },
-      { name: "Data Analysis", level: 85 },
+      { name: "Python / MATLAB", level: 88 },
+      { name: "SolidWorks", level: 90 },
+      { name: "Minitab Statistical Analysis", level: 85 },
     ],
   },
   {

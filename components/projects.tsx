@@ -1,7 +1,6 @@
 "use client"
 
 import { motion, Variants } from "framer-motion"
-import { ExternalLink } from "lucide-react"
 
 const projects = [
   {
@@ -12,18 +11,18 @@ const projects = [
     image: "/compressor.png",
   },
   {
+    title: "Carbon Capture Studies",
+    description:
+      "Supported carbon-capture and air-separation studies at Worley, developing ASPEN-based simulations and heat & mass balances during Select-phase evaluations. Researched global sulphur-recovery configurations and presented technology-selection findings to guide early-phase design decisions for client projects.",
+    tech: ["ASPEN HYSYS", "Process Design", "Technical Research", "Heat & Mass Balance"],
+    image: "/carbon-capture.png",
+  },
+  {
     title: "Test Environment Upgrade",
     description:
       "Led the capability upgrade of the test environment under $1M budget, implementing bi-directional power systems, thermal chambers, and advanced instrumentation. This initiative improved uptime from approximately 55% to 90%, enabling stable, continuous system testing across various temperature and pressure conditions.",
     tech: ["Systems Integration", "Instrumentation", "Thermal Testing", "Power Systems"],
     image: "/heating.png",
-  },
-  {
-    title: "Data Analysis Automation",
-    description:
-      "Built MATLAB/Python workflows to process high-volume time-series data from fuel cell testing. Transformed raw logs into clear performance summaries, cutting analysis time from days to hours and providing design teams with actionable insights for rapid iteration.",
-    tech: ["MATLAB", "Python", "Time-Series Analysis", "Automation"],
-    image: "/automation.png",
   },
 ]
 
@@ -204,7 +203,6 @@ export function Projects() {
                       d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
                     />
                   </motion.svg>
-                  <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
                 </div>
                 <h4 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                   {project.title}
