@@ -4,9 +4,9 @@ import { motion, Variants } from "framer-motion"
 
 const projects = [
   {
-    title: "Compressor Verification Program",
+    title: "Hydrogen Fuel Cell System Design Verification and Validation",
     description:
-      "Rebuilt the verification strategy for three compressor platforms at Ballard. Defined requirements as per DFMEA, established test coverage matrices, and set pass/fail limits following DVP&R methodology. This systematic approach helped shorten verification cycles by approximately 25% and improved iterative design rework processes.",
+      "Rebuilt the verification strategy for Ballard's hydrogen fuel cell system. Defined requirements as per DFMEA, established test coverage matrices, and set pass/fail limits following DVP&R methodology. This systematic approach helped shorten verification cycles by approximately 25% and improved iterative design rework processes.",
     tech: ["DFMEA", "DVP&R", "Test Engineering", "Data Analysis"],
     image: "/compressor.png",
   },
@@ -25,23 +25,23 @@ const projects = [
     image: "/heating.png",
   },
   {
-    title: "Root Cause Analysis Framework",
+    title: "Failure Analysis",
     description:
-      "Used Fault Tree Analysis to isolate root causes of system issues including overvoltage, heartbeat losses, and sensor instability — eliminated 10+ recurring failures.",
+      "Led root cause investigations across fuel cell test environments using structured RCA and Fault Tree Analysis. Isolated multi-variable failures including overvoltage events, CAN heartbeat losses, and sensor drift, enabling targeted corrective actions that eliminated 10+ recurring failure modes and improved overall test reliability.",
     tech: ["Fault Tree Analysis", "Debugging"],
     image: "/analysis.png",
   },
   {
     title: "Data Analysis Automation",
     description:
-      "Built MATLAB/Python workflows to process high-volume time-series data from fuel cell testing. Transformed raw logs into clear performance summaries, cutting analysis time from days to hours.",
+      "Built automated analysis pipelines for high-frequency fuel cell test data using Python and MATLAB. Standardized data ingestion, processing, and visualization to enable rapid trend analysis, anomaly detection, and cross-test comparison, reducing analysis cycles from days to hours.",
     tech: ["MATLAB", "Python", "Time-Series Analysis"],
     image: "/automation.png",
   },
   {
     title: "Manufacturing BOM Optimization",
     description:
-      "Improved manufacturing BOM accuracy across three product lines at Ballard, contributing to an estimated ~$1M cost saving.",
+      "Drove manufacturing BOM accuracy improvements by reconciling documentation with actual build configurations. Resolved part definition, revision, and supplier mapping gaps, reducing rework and procurement friction and contributing to approximately $1M in cost savings.",
     tech: ["Process Improvement", "Lean"],
     image: "/manufacturing-plant.png",
   },
