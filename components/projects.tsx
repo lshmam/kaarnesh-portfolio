@@ -34,10 +34,10 @@ const otherProjects = [
     tech: ["Fault Tree Analysis", "Debugging"],
   },
   {
-    title: "Carbon Capture Studies",
+    title: "Data Analysis Automation",
     description:
-      "Supported carbon-capture and air-separation studies at Worley, preparing technology-selection presentations for client decision-making",
-    tech: ["ASPEN", "Process Design"],
+      "Built MATLAB/Python workflows to process high-volume time-series data from fuel cell testing. Transformed raw logs into clear performance summaries, cutting analysis time from days to hours",
+    tech: ["MATLAB", "Python", "Time-Series Analysis"],
   },
   {
     title: "Manufacturing BOM Optimization",
