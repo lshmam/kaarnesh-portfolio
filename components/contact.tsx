@@ -77,7 +77,7 @@ export function Contact() {
             whileHover={{ scale: 1.05, color: "var(--primary)" }}
           >
             <MapPin className="w-5 h-5 text-primary" />
-            <span>Vancouver, British Columbia, Canada</span>
+            <span>Vancouver, Canada & Abu Dhabi, UAE</span>
           </motion.div>
           <motion.div
             className="flex items-center gap-2"

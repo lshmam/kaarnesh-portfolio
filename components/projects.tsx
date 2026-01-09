@@ -24,26 +24,26 @@ const projects = [
     tech: ["Systems Integration", "Instrumentation", "Thermal Testing", "Power Systems"],
     image: "/heating.png",
   },
-]
-
-const otherProjects = [
   {
     title: "Root Cause Analysis Framework",
     description:
-      "Used Fault Tree Analysis to isolate root causes of system issues including overvoltage, heartbeat losses, and sensor instability — eliminated 10+ recurring failures",
+      "Used Fault Tree Analysis to isolate root causes of system issues including overvoltage, heartbeat losses, and sensor instability — eliminated 10+ recurring failures.",
     tech: ["Fault Tree Analysis", "Debugging"],
+    image: "/analysis.png",
   },
   {
     title: "Data Analysis Automation",
     description:
-      "Built MATLAB/Python workflows to process high-volume time-series data from fuel cell testing. Transformed raw logs into clear performance summaries, cutting analysis time from days to hours",
+      "Built MATLAB/Python workflows to process high-volume time-series data from fuel cell testing. Transformed raw logs into clear performance summaries, cutting analysis time from days to hours.",
     tech: ["MATLAB", "Python", "Time-Series Analysis"],
+    image: "/automation.png",
   },
   {
     title: "Manufacturing BOM Optimization",
     description:
-      "Improved manufacturing BOM accuracy across three product lines at Ballard, contributing to an estimated ~$1M cost saving",
+      "Improved manufacturing BOM accuracy across three product lines at Ballard, contributing to an estimated ~$1M cost saving.",
     tech: ["Process Improvement", "Lean"],
+    image: "/manufacturing-plant.png",
   },
 ]
 
@@ -72,28 +72,6 @@ export function Projects() {
     },
   }
 
-  const fadeInUp: Variants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1] as const,
-      },
-    },
-  }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  }
-
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
@@ -105,7 +83,7 @@ export function Projects() {
           variants={slideInLeft}
         >
           <span className="text-primary font-mono text-sm">03.</span>
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Featured Projects</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Projects</h2>
           <div className="flex-1 h-px bg-border" />
         </motion.div>
 
@@ -135,7 +113,7 @@ export function Projects() {
 
               {/* Content */}
               <div className={`w-full md:w-1/2 ${index % 2 === 1 ? "md:text-left" : "md:text-right"}`}>
-                <p className="text-primary font-mono text-sm mb-2">Featured Project</p>
+                <p className="text-primary font-mono text-sm mb-2">Project</p>
                 <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">{project.title}</h3>
                 <motion.div
                   className="bg-card p-6 rounded-lg shadow-xl mb-4"
@@ -162,63 +140,6 @@ export function Projects() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="mt-24"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
-        >
-          <h3 className="text-xl font-semibold text-foreground text-center mb-12">
-            Other Noteworthy Projects
-          </h3>
-          <motion.div
-            className="grid md:grid-cols-3 gap-4"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-          >
-            {otherProjects.map((project, index) => (
-              <motion.div
-                key={project.title}
-                className="bg-card p-6 rounded-lg group cursor-pointer"
-                variants={fadeInUp}
-                whileHover={{ y: -10, boxShadow: "0 20px 40px -15px rgba(0, 0, 0, 0.4)" }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <motion.svg
-                    className="w-10 h-10 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-                    />
-                  </motion.svg>
-                </div>
-                <h4 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                  {project.title}
-                </h4>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{project.description}</p>
-                <ul className="flex flex-wrap gap-2 text-xs font-mono text-muted-foreground">
-                  {project.tech.map((t) => (
-                    <li key={t} className="group-hover:text-primary/80 transition-colors duration-300">
-                      {t}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   )

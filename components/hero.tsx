@@ -167,7 +167,7 @@ export function Hero() {
           variants={itemVariants}
         >
           Delivering decision-ready engineering evidence. Specializing in hydrogen fuel cell systems, oil & gas
-          consulting, and process & test engineering. E.I.T based in Vancouver, BC.
+          consulting, and process & test engineering. Open to work in Vancouver, Canada and Abu Dhabi, UAE.
         </motion.p>
 
         <motion.div
